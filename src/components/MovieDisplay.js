@@ -1,8 +1,36 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
+
 import '../App.css';
+
+//const API_KEY = '89e57dcae9771ece73cf9ab5b6d61244'
+ 
 
 
 function MovieDisplay() {
+
+  const [movie, setMovie] = useState([])
+
+  useEffect(()=>{
+
+    let apiData = 'https://api.themoviedb.org/3/movie/550?api_key=89e57dcae9771ece73cf9ab5b6d61244'
+        fetch(apiData)
+        .then((response)=>{
+           return response.json()
+            })
+        .then((data)=>{
+            
+          setMovie(data)
+            console.log(data)
+
+          })
+          .catch((error)=>{
+              console.log(error)
+  
+          })
+  
+      })
+
+  
   return (
     <div className="wrapper">
     <div className="header">
@@ -29,11 +57,10 @@ function MovieDisplay() {
     <div className="cards_wrap">
       <div className="card_item">
         <div className="card_inner">
-          <img src="black_panther.png"  alt='movieImage'/>
-          <div className="role_name">Black Panther</div>
-          <div className="real_name">Chadwick Boseman</div>
-          <div className="film">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</div>
+          <img src={movie.backdrop_path}  alt='movieImage'/>
+          <div className="role_name">{movie.original_title}</div>
+          <div className="real_name">{movie.tagline}</div>
+          <div className="film">{movie.overview}</div>
         </div>
       </div>
       
@@ -43,4 +70,4 @@ function MovieDisplay() {
   )
 }
 
-export default MovieDisplay
+export default MovieDisplay;
