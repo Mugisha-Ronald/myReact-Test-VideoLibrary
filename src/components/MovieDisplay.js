@@ -19,9 +19,9 @@ function MovieDisplay() {
         </div>
         <ul>
           <li><input type="text" placeholder="Search movies.."/></li>
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">Account</a></li>
-          <li><a href="#"><button>GO TO CART</button></a></li>
+          <li><a href="google.com">Movies</a></li>
+          <li><a href="google.com">Account</a></li>
+          <li><a href="google.com"><button>GO TO CART</button></a></li>
         </ul>
       </nav>
     </div>
@@ -29,76 +29,14 @@ function MovieDisplay() {
     <div className="cards_wrap">
       <div className="card_item">
         <div className="card_inner">
-          <img src="black_panther.png" />
+          <img src="black_panther.png"  alt='movieImage'/>
           <div className="role_name">Black Panther</div>
           <div className="real_name">Chadwick Boseman</div>
           <div className="film">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>
       </div>
-      <div className="card_item">
-        <div className="card_inner">
-          <img src="doctor_strange.png" />
-          <div className="role_name">Doctor Strange</div>
-          <div className="real_name">Benedict Cumberbatch</div>
-          <div className="film">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-      </div>
-      <div className="card_item">
-        <div className="card_inner">
-          <img src="black_widow.png" />
-          <div className="role_name">Black Widow</div>
-          <div className="real_name">Scarlett Johansson</div>
-          <div className="film">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-      </div>
-      <div className="card_item">
-        <div className="card_inner">
-          <img src="Spider_man.png" />
-          <div className="role_name">Spider Man</div>
-          <div className="real_name">Tom Holland</div>
-          <div className="film">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-      </div>
-      <div className="card_item">
-        <div className="card_inner">
-          <img src="black_widow.png" />
-          <div className="role_name">Black Widow</div>
-          <div className="real_name">Scarlett Johansson</div>
-          <div className="film">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-      </div>
-      <div className="card_item">
-        <div className="card_inner">
-          <img src="black_panther.png" />
-          <div className="role_name">Black Panther</div>
-          <div className="real_name">Chadwick Boseman</div>
-          <div className="film">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-      </div>
-      <div className="card_item">
-        <div className="card_inner">
-          <img src="Spider_man.png" />
-          <div className="role_name">Spider Man</div>
-          <div className="real_name">Tom Holland</div>
-          <div className="film">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-      </div>
-      <div className="card_item">
-        <div className="card_inner">
-          <img src="doctor_strange.png" />
-          <div className="role_name">Doctor Strange</div>
-          <div className="real_name">Benedict Cumberbatch</div>
-          <div className="film">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt aliqua.</div>
-        </div>
-      </div>
+      
     </div>
   </div>
 
